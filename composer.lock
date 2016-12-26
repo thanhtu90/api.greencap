@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "55e0189572197de0b563540cd8aae6d3",
-    "content-hash": "5bd58fd976f1ee3e9611bc37c006ec46",
+    "hash": "7600a3267c47a2dd6580dda7767aa6e5",
+    "content-hash": "e5fe6ec01f9728a34b956dd9139b0f6f",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -1943,6 +1943,37 @@
                 "environment"
             ],
             "time": "2015-05-30 15:59:26"
+        },
+        {
+            "name": "xmeltrut/autop",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/xmeltrut/autop.git",
+                "reference": "b8a32d28f3ee2247a0969880d66903935f86d71b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/xmeltrut/autop/zipball/b8a32d28f3ee2247a0969880d66903935f86d71b",
+                "reference": "b8a32d28f3ee2247a0969880d66903935f86d71b",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/Autop.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Chris Worfolk",
+                    "email": "chris@worfolk.co.uk",
+                    "homepage": "http://www.worfolk.co.uk"
+                }
+            ],
+            "description": "WordPress' excellent wpautop as a standalone library",
+            "time": "2015-06-07 15:12:09"
         }
     ],
     "packages-dev": [
