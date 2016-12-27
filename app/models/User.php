@@ -142,7 +142,6 @@ class User extends Model
                     'user_pass' => $password,
                     'user_email' => $data['user_login'],
                     'user_registered' => Carbon::now(),
-                    'user_logged' => Carbon::now(),
                     'display_name' => valueOrNull($data['name'], 'User'),
                     'user_nicename' => $user_nicename
                 ]);
@@ -157,12 +156,12 @@ class User extends Model
                         ->insert([
                             [
                                 'user_id' => $user_id,
-                                'meta_key' => 'mb_capabilities',
+                                'meta_key' => 'wp_capabilities',
                                 'meta_value' => 'a:1:{s:10:"subscriber";b:1;}'
                             ],
                             [
                                 'user_id' => $user_id,
-                                'meta_key' => 'mb_user_level',
+                                'meta_key' => 'wp_user_level',
                                 'meta_value' => '0'
                             ]
                         ]);

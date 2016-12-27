@@ -46,18 +46,12 @@ class AccountController extends Controller
         $validation = Validator::make($request->input(), [
             'user_login' => 'required',
             'user_pass' => 'required|min:3',
-            'name' => 'required',
-            'gender' => 'required',
-            'city_id' => 'required',
-            'phone' => 'required'
+            'name' => 'required'
         ], [
             'user_login.required' => 'Vui lòng nhập tên đăng nhập.',
             'user_pass.required' => 'Vui lòng nhập mật khẩu.',
             'user_pass.min' => 'Độ dài mật khẩu phải lớn hơn :min kí tự.',
-            'name.required' => 'Vui lòng nhập họ tên.',
-            'gender.required' => 'Vui lòng chọn giới tính.',
-            'city_id.required' => 'Vui lòng chọn tỉnh/thành phố',
-            'phone.required' => 'Vui lòng nhập số điện thoại'
+            'name.required' => 'Vui lòng nhập họ tên.'
         ]);
 
         if ($validation->passes()) {
